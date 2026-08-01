@@ -1,0 +1,120 @@
+p{
+    font-family: "Oswald", sans-serif;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    margin:0;
+    font-family:Arial,sans-serif;
+    color:#fff;
+
+    background:linear-gradient(135deg,#128fc9,#5a0aa5,#ec1b1b);
+    background-size:300% 300%;
+    animation:bg 12s infinite;
+}
+
+h1{
+    font-family:"Kablammo",cursive;
+}
+
+header{
+    text-align:center;
+    padding:40px 20px;
+}
+
+nav{
+    position:sticky;
+    top:0;
+    display:flex;
+    justify-content:center;
+    gap:30px;
+    padding:20px;
+    background:#111827;
+}
+
+nav a{
+    color:#fff;
+    text-decoration:none;
+    font-weight:bold;
+    transition:.3s;
+}
+
+nav a:hover{
+    color:#3bf654;
+}
+
+.button{
+    display:inline-block;
+    margin:10px;
+    padding:12px 20px;
+    color:#faf9f9;
+    background:#010504;
+    border-radius:10px;
+    text-decoration:none;
+    transition:.3s;
+}
+
+.button:hover{
+    transform:scale(1.1);
+    background:#4fff92;
+}
+
+.red{
+    background:#d31e1e;
+}
+
+.card{
+    margin:20px 0;
+    padding:20px;
+    background:#1e293b;
+    border-radius:15px;
+    transition:.3s;
+}
+.card:hover{
+    transform:translateY(-10px);
+    box-shadow:0 0 25px #3b82f6;
+}
+
+.profile{
+    width:180px;
+    margin:20px;
+    border:5px solid #f80606;
+    border-radius:50%;
+}
+
+@keyframes bg{
+    0%,100%{
+        background-position:left;
+    }
+
+    50%{
+        background-position:right;
+    }
+}
+
+.grid-container {
+margin-top: 3em;
+margin-bottom: 3em;
+display: grid;
+width:100%;
+grid-template-columns: repeat(3, 1fr);
+grid-template-rows: 1fr 1fr;
+grid-template-areas: 
+"img-1   img-2 img-3"
+"img-1 img-2 img-3";
+gap: 1em;
+}
+
+.grid-container img {
+    height: 100%;
+    width: 100%;
+    border-radius: .5em;
+    transition: 100ms ease;
+}
+
+.grid-container img:hover {
+    scale: 1.07
+}
